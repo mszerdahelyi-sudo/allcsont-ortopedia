@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Orvosaink – {{ setting.clinic_name }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>:root { --primary: {{ setting.primary_color }}; }</style>
+</head>
+<body>
+    <!-- Top contact header -->
+    <div class="bg-light py-2 small">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-md-8">
+                    1122 Budapest, Városmajor u. 47/B. • Nyitvatartás: Hétfő 8:00-12:00, Csütörtök 16:00-19:00
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <a href="tel:+36201234567">+36 20 123 4567</a> • 
+                    <a href="mailto:info@allcsont-ortopedia.hu">info@allcsont-ortopedia.hu</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="/">{{ setting.clinic_name }}</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Kezdőlap</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/allcsont-ortopedia">Állcsont-ortopédia</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/orvosaink">Orvosaink</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/kapcsolat">Kapcsolat</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5 mt-5">
+        <h2 class="text-center text-primary mb-5">Orvosaink</h2>
+        <div class="row g-5">
+            <div class="col-lg-6">
+                <img src="/static/uploads/Emil profilfotó.jpg" class="img-fluid rounded-circle shadow mb-3" style="width:180px;height:180px;object-fit:cover;">
+                <h5>Dr. Illés Emil</h5>
+                <p class="text-primary">Fogszabályozó és állcsontortopéd szakorvos</p>
+                <p>Fogorvosi diplomámat a Semmelweis Egyetem Fogorvostudományi Karán szereztem 2008-ban...</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="/static/uploads/FM.png" class="img-fluid rounded-circle shadow mb-3" style="width:180px;height:180px;object-fit:cover;">
+                <h5>Dr. Földesi Marcell</h5>
+                <p class="text-primary">Fogszabályozó szakorvos</p>
+                <p>Fogorvosi diplomámat a Semmelweis Egyetem Fogorvostudományi Karán szereztem...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
